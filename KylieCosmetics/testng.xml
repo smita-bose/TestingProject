@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="/Users/smitabose/IdeaProjects/KylieCosmetics/src/test/java/com/kyliecosmetics/tests/CompatibilityTest.java">
+        <parameter name="browser" value="safari"></parameter>
+        <parameter name="url" value="https://kyliecosmetics.com/en-in"></parameter>
+        <classes>
+            <class name="com.kyliecosmetics.tests.CompatibilityTest">
+                <methods>
+                    <include name="CookieConsent"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="/Users/smitabose/IdeaProjects/KylieCosmetics/src/test/java/com/kyliecosmetics/tests/SecurityTesting.java">
+        <classes>
+            <class name="com.kyliecosmetics.tests.SecurityTesting">
+                <methods>
+                    <include name="CookieConsent"/>
+                    <include name="testSSLCertificate"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="/Users/smitabose/IdeaProjects/KylieCosmetics/src/test/java/com/kyliecosmetics/tests/LoadTimeTest.java">
+        <classes>
+            <class name="com.kyliecosmetics.tests.LoadTimeTest">
+                <methods>
+                    <include name="websiteLoadTime"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="/Users/smitabose/IdeaProjects/KylieCosmetics/src/test/java/com/kyliecosmetics/tests/MobileResponsivenessTest.java">
+        <classes>
+            <class name="com.kyliecosmetics.tests.MobileResponsivenessTest">
+                <methods>
+                    <include name="CookieConsent"/>
+                    <include name="testMobileResponsive"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="/Users/smitabose/IdeaProjects/KylieCosmetics/src/test/java/com/kyliecosmetics/tests/VerifyHomePageTitle.java">
+        <classes>
+            <class name="com.kyliecosmetics.tests.VerifyHomePageTitle">
+                <methods>
+                    <include name="verifyTitle"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="/Users/smitabose/IdeaProjects/KylieCosmetics/src/test/java/com/kyliecosmetics/tests/VerifyNavBarTest.java">
+        <classes>
+            <class name="com.kyliecosmetics.tests.VerifyNavBarTest">
+                <methods>
+                    <include name="CookieConsent"/>
+                    <include name="verifyNavBar"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="/Users/smitabose/IdeaProjects/KylieCosmetics/src/test/java/com/kyliecosmetics/tests/SearchFunctionalityTest.java">
+        <classes>
+            <class name="com.kyliecosmetics.tests.SearchFunctionalityTest">
+                <methods>
+                    <include name="CookieConsent"/>
+                    <include name="verifySearch"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="/Users/smitabose/IdeaProjects/KylieCosmetics/src/test/java/com/kyliecosmetics/tests/FunctionalityTest.java">
+        <classes>
+            <class name="com.kyliecosmetics.tests.FunctionalityTest">
+                <methods>
+                    <include name="CookieConsent"/>
+                    <include name="loginToSite"/>
+                    <include name="searchProduct"/>
+                    <include name="addToWishlist"/>
+                    <include name="checkWishlist"/>
+                    <include name="productAddToCart"/>
+                    <include name="checkoutProduct"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="/Users/smitabose/IdeaProjects/KylieCosmetics/src/test/java/com/kyliecosmetics/tests/SocialMediaLinksTest.java">
+        <classes>
+            <class name="com.kyliecosmetics.tests.SocialMediaLinksTest">
+                <methods>
+                    <include name="CookieConsent"/>
+                    <include name="facebookTest"/>
+                    <include name="instagramTest"/>
+                    <include name="twitterTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
